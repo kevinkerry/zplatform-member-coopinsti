@@ -15,7 +15,6 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.zlebank.zplatform.member.commons.enums.BusinessActorType;
-import com.zlebank.zplatform.member.commons.service.PrimayKeyService;
 import com.zlebank.zplatform.member.commons.utils.RSAUtils;
 import com.zlebank.zplatform.member.coopinsti.bean.CoopInsti;
 import com.zlebank.zplatform.member.coopinsti.bean.CoopInstiBusi;
@@ -31,6 +30,7 @@ import com.zlebank.zplatform.member.exception.GenerateCoopInstiCodeException;
 import com.zlebank.zplatform.member.exception.GenerateCoopInstiMKException;
 import com.zlebank.zplatform.member.exception.InstiNameExistedException;
 import com.zlebank.zplatform.member.exception.PrimaykeyGeneratedException;
+import com.zlebank.zplatform.member.individual.service.PrimayKeyService;
 
 @Service("coopInstiService")
 public class CoopInstiServiceImpl implements CoopInstiService {
